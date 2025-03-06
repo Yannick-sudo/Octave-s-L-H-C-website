@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #eaeae3;
+    background: linear-gradient(to bottom, #2eae06 10%, #170238 90%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #0f2b74 10%, #011937 90%);
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+}
+
+.navbar a:hover {
+    background: linear-gradient(to bottom, #b8860b 10%, #ffd700 90%);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to bottom, #fff8dc 10%, #ffebcd 90%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.homepage {
+    text-align: left;
+    padding: 50px;
+    background: linear-gradient(to bottom, #5f4404 5%, #bb7506 95%);
+    color: white;
+    
+}
+
+.homepage h1 {
+    font-size: 2.5rem;
+}
+
+.homepage h5 {
+    
+    position: absolute;
+    left: 40%;
+    transform: translateX(-30%);
+    font-size: 1.0rem;
+   
+    margin-top: 10px; /* Add spacing between them */
+
+}
+.highlight {
+    color: #150678; /* Change to your desired color */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+.homepage h6 {
+    
+    position: absolute;
+    left: 40%;
+    transform: translateX(78%);
+    font-size: 1.0rem;
+    display: block; /* Ensure each element takes a full line */
+    margin-top: 30px; /* Add spacing between them */
+
+}
+
+.products {
+    padding: 20px;
+}
+
+.gallery {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #b8860b;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+    background: linear-gradient(to bottom, #6d5c16 5%, #d4a35a 95%);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product button {
+    background: linear-gradient(to bottom, #b8860b 10%, #ffd700 90%);
+    color: rgb(176, 21, 21);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background: linear-gradient(to bottom, #ffd700 10%, #b8860b 90%);
+}
+
+.about {
+    padding: 20px;
+    background: linear-gradient(to bottom, #fffaf0 5%, #0b0b0b 95%);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #bcb3b3;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: linear-gradient(to bottom, #ffebcd 5%, #fff8dc 95%);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #b8860b;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: #333;
+}
+
+.modal-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background: linear-gradient(to bottom, #daa520 10%, #ffd700 90%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: linear-gradient(to bottom, #ffd700 10%, #daa520 90%);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#orders {
+    padding: 20px;
+}
+
+#orderList div {
+    border: 1px solid #b8860b;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #fff8dc 5%, #ffebcd 95%);
+}
+
+#orderList div p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #dfd7d7;
+}
+
+#orders button {
+    background: linear-gradient(to bottom, #b8860b 10%, #ffd700 90%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#orders button:hover {
+    background: linear-gradient(to bottom, #9c8503 10%, #d29704 90%);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .homepage {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+}

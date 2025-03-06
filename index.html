@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury houses and Cars for sale in Rwanda</title>
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+   
+    <nav class="navbar">
+        <ul class="nav-left">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#products">Products</a>
+                <div class="dropdown-content">
+                    <a href="#ladies">Luxury Houses</a>
+                    <a href="#men">Luxury Cars</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav-right">
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="homepage">
+        <h1>A Warm Welcome to you on </h1>
+        <h2>Luxury houses and Cars for sale in Rwanda.</h2>
+        <h4> We really know how important you are, that's how you will be treated.</h4>
+        <h5><span class="highlight">FOR INQUIRIES</span> feel free to contact us:0735737435 for calls</h5>
+        <h6> :0787066126 for whatsapp</h6>
+     </section>
+ 
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        
+        <div id="ladies" class="gallery">
+            <h3>Luxury house:</h3>
+            <div class="product">
+                <img src="house 1.jpg" alt="Kinyinya Mansion">
+                <p>Luxury house in Kinyinya - $150M</p>
+                <a href="https://www.google.com/imgres?q=luxury%20houses%20in%20rwanda&imgurl=https%3A%2F%2Fvibe.rw%2Fwp-content%2Fuploads%2F2023%2F06%2F23-06-14-House-for-sale-kiyovu-kigalirwanda-17-min-1170x749.jpg&imgrefurl=https%3A%2F%2Fvibe.rw%2Fproperty%2Fnew-high-end-luxury-pool-homes-in-kiyovu-for-sale%2F&docid=GVUDJsU39tQokM&tbnid=KBSLa_MvDEpdGM&vet=12ahUKEwiRn9nqxPSLAxVQgP0HHdyTLykQM3oECGQQAA..i&w=1170&h=749&hcb=2&ved=2ahUKEwiRn9nqxPSLAxVQgP0HHdyTLykQM3oECGQQAA">More like this</a>
+                <button onclick="openOrderForm('luxury Mansion', 150)">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="house 2.jpg" alt="Nyarutarama Mansion">
+                <p>luxury Mansion at Nyarutarama - $175M</p>
+                <a href="https://www.mansionglobal.com/buy/rwanda/kigali-city/kigali">More like this</a>
+                <button onclick="openOrderForm('Luxurious Mansion', 175)">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="house3.jpg" alt="Kiyovu Mansion">
+                <p> luxury Home at Kiyovu $190M</p>
+                <a href="https://www.mansionglobal.com/buy/rwanda/kigali-city/kigali">More like this</a>
+                <button onclick="openOrderForm('Luxury Mansion', 190)">Order Now</button>
+            </div>
+        </div>
+
+        <div id="men" class="gallery">
+            <h3>Luxury Cars:</h3>
+            <div class="product">
+                <img src="ca1.jpg" alt="BenZ1">
+                <p>luxuryBenz - $100M</p>
+                <a href="https://www.google.com/imgres?q=luxury%20cars%20in%20rwanda&imgurl=https%3A%2F%2Flookaside.instagram.com%2Fseo%2Fgoogle_widget%2Fcrawler%2F%3Fmedia_id%3D3518462888127115356&imgrefurl=https%3A%2F%2Fwww.instagram.com%2Fkgl_luxury%2F&docid=Y9XRTgRzWbvuUM&tbnid=VmJGd79WG3y1PM&vet=12ahUKEwjezp-Ux_SLAxVQg_0HHc08O08QM3oECHIQAA..i&w=1290&h=2294&hcb=2&ved=2ahUKEwjezp-Ux_SLAxVQg_0HHc08O08QM3oECHIQAA">More like this</a>
+                <button onclick="openOrderForm('Classic Benz', 100)">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="car2.jpg" alt="Range R2">
+                <p>Fancy Range Rover  - $160M</p>
+                <a href="https://automag.rw/2025/01/22/best-websites-for-buying-cars-online-in-rwanda/">More like this</a>
+                <button onclick="openOrderForm('Casual Range', 160)">Order Now</button>
+            </div>
+            <div class="product">
+                <img src="ca3.jpg" alt="iClassBenz">
+                <p>FirstClassic Benz I  - $200M</p>
+                <a href="https://automag.rw/2025/01/22/best-websites-for-buying-cars-online-in-rwanda/">More like this</a>
+                <button onclick="openOrderForm('FirstClassicBenz', 200)">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Luxurious Co , we prioritize quality, luxury and affordability. Explore our diverse collection tailored to meet all your luxury needs.</p>
+    </section>
+
+  
+    <div id="orderForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderForm()">&times;</span>
+            <h2>Order Product</h2>
+            <form id="orderFormDetails">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" readonly>
+
+                <label for="productPrice">Price:</label>
+                <input type="text" id="productPrice" name="productPrice" readonly>
+
+                <label for="customerName">Your Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+
+                <label for="customerEmail">Your Email:</label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+
+                <button type="button" onclick="submitOrder()">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <section id="orders">
+        <h2>Customer Orders</h2>
+        <div id="orderList"></div>
+        <button onclick="clearOrders()">Clear Orders</button>
+    </section>
+
+    <script>
+        function openOrderForm(productName, productPrice) {
+            document.getElementById("orderForm").style.display = "block";
+            document.getElementById("productName").value = productName;
+            document.getElementById("productPrice").value = productPrice;
+        }
+
+        function closeOrderForm() {
+            document.getElementById("orderForm").style.display = "none";
+        }
+
+        function submitOrder() {
+            const productName = document.getElementById("productName").value;
+            const productPrice = document.getElementById("productPrice").value;
+            const customerName = document.getElementById("customerName").value;
+            const customerEmail = document.getElementById("customerEmail").value;
+
+            const order = {
+                productName,
+                productPrice,
+                customerName,
+                customerEmail,
+            };
+
+            let orders = JSON.parse(localStorage.getItem("orders")) || [];
+            orders.push(order);
+            localStorage.setItem("orders", JSON.stringify(orders));
+
+            alert("Order submitted successfully!");
+            closeOrderForm();
+            viewOrders();
+        }
+
+        function viewOrders() {
+            const orders = JSON.parse(localStorage.getItem("orders")) || [];
+            const orderList = document.getElementById("orderList");
+            orderList.innerHTML = "";
+
+            orders.forEach((order, index) => {
+                const orderItem = document.createElement("div");
+                orderItem.innerHTML = `<p><strong>Order ${index + 1}</strong></p>
+                <p>Product: ${order.productName}</p>
+                <p>Price: $${order.productPrice}</p>
+                <p>Customer Name: ${order.customerName}</p>
+                <p>Customer Email: ${order.customerEmail}</p>`;
+                orderList.appendChild(orderItem);
+            });
+
+            document.getElementById("orders").style.display = "block";
+        }
+
+        function clearOrders() {
+            localStorage.removeItem("orders");
+            alert("Orders cleared!");
+            document.getElementById("orderList").innerHTML = "";
+        }
+
+        viewOrders(); 
+    </script>
+</body>
+</html>
